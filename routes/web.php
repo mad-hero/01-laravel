@@ -10,27 +10,15 @@ Route::get('/proyectos', function () {
     return view('projectsView');
 });
 
-Route::get('/crearProyecto', function () {
+Route::post('/proyectos', function () {
     return view('createProjectView');
 });
 
-Route::post('/crearProyecto', function () {
-    return view('405NotAllowedView');
-});
-
-Route::patch('/actualizarProjecto', function () {
-    return view('405NotAllowedView');
-});
-
-Route::get('/actualizarProjecto', function () {
+Route::patch('/proyectos', function () {
     return view('updateProjectView');
 });
 
-Route::delete('/borrarProjecto', function () {
-    return view('405NotAllowedView');
-});
-
-Route::get('/borrarProjecto', function () {
-    return view('deleteProjectView');
+Route::delete('/proyectos', function () {
+    return view('deleteProyectView');
 });
 
