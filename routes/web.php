@@ -10,15 +10,15 @@ Route::get('/proyectos', function () {
     return view('projectsView');
 });
 
-Route::post('/proyectos', function () {
+Route::get('/crearProyecto', function () {
     return view('createProjectView');
 });
 
-Route::patch('/proyectos', function () {
+Route::get('/actualizarProjecto', function () {
     return view('updateProjectView');
 });
 
-Route::delete('/proyectos', function () {
-    return view('deleteProyectView');
+Route::get('/borrarProjecto', function () {
+    return view('deleteProjectView');
 });
 

@@ -2,12 +2,21 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\MaintainerModel;
 use Illuminate\Http\Request;
+use App\Models\MaintainerModel;
 
-class CreateProjectController extends Controller
+class Proyectos extends Controller
 {
-    public function nuevoProjecto ($_nuevo){
+    public function obtenerProyectos ($_id){
+        $id = $_id;
+        if ($id == NULL){
+        // Retorna todo
+        } else{
+            // Retorna solo el Valor del Id.
+        }
+    }
+
+    public function nuevoProyecto ($_nuevo){
         //Nuevo objeto
 
         $id = $_nuevo->getId();
@@ -20,6 +29,14 @@ class CreateProjectController extends Controller
         // Crea una nueva instancia de MaintainerModel con todos los argumentos necesarios
         $registro = new MaintainerModel($id, $nombre, $fechaInicio, $estado, $responsable, $monto);
         $registro ->setId($_nuevo->getId());
-
     }
+
+    public function actualizarProyecto($_id, $_nuevo){
+        // Para actualizar un registro
+    }
+
+    public function eliminarProyecto($_id){
+        // Para eliminar un Registro
+    }
+
 }
