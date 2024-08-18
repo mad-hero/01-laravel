@@ -17,7 +17,8 @@
   <li class="list-group-item">Franco Vásquez Fuentes</li>
 </ul>
 
-<h6 style="margin-top: 30px">Repositorio: <a target="_blank" href="https://github.com/mbstnd/01-laravel">https://github.com/mbstnd/01-laravel</a></h6>
-</body>
+<h6 style="margin-top: 30px">Repositorio:</h6><a target="_blank" href="https://github.com/mbstnd/01-laravel">https://github.com/mbstnd/01-laravel</a>
+<h6 style="margin-top: 30px">Documentacion API:</h6><a target="_blank" href="/swagger">Swagger</a>
 
+</body>
 </html>
